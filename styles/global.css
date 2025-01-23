@@ -34,34 +34,34 @@ img {
   width: 100%;
 }
 
-h1{
+h1 {
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
 }
 
-.small__text{
+.small__text {
   font-size: 20px;
   font-weight: normal;
   line-height: 120%;
 }
 
-address{
+address {
   font-style: normal;
 }
 
-.underline{
+.underline {
   position: relative;
 }
 
-.underline::before{
+.underline::before {
   position: absolute;
   content: '';
   bottom: -1px;
@@ -70,11 +70,11 @@ address{
   background: #000;
 }
 
-.overlay{
+.overlay {
   position: relative;
 }
 
-.overlay::before{
+.overlay::before {
   position: absolute;
   content: '';
   width: 100%;
