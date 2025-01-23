@@ -1,3 +1,89 @@
+/* Общие стили */
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+  
+.small__text {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 120%;
+}
+  
+address {
+    font-style: normal;
+}
+
+.address {
+    max-width: 238px;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-list-item {
+    list-style: none;
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+.address-list-item-link {
+    text-decoration: none;
+    color: #000;
+}
+  
+.underline {
+    position: relative;
+}
+  
+.underline::before {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+  
+.overlay {
+    position: relative;
+}
+  
+.overlay::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    z-index: 0;
+}
+
+.button {
+    font-family: Raleway, sans-serif;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 12px 31px;
+}
+
+/* Конец общих стилей */
+
 /* Стили шапки */
 
 .header {
@@ -39,25 +125,7 @@
 }
 
 .header__address {
-    max-width: 238px;
     justify-self: end;
-}
-
-.header__address-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.header__address-list-item {
-    list-style: none;
-    font-size: 18px;
-    line-height: 24.3px;
-}
-
-.header__address-list-item-link {
-    text-decoration: none;
-    color: #000;
-
 }
 
 /* Конец стилей шапки */
@@ -86,8 +154,12 @@
     letter-spacing: 59px;
 }
 
+.letter__spacing-last {
+    letter-spacing: 0;
+}
+
 .main__title-left {
-    margin-right: auto;
+    text-align: left;
 }
 
 .main__title-left:last-child {
@@ -95,12 +167,13 @@
 }
 
 .main__title-center {
-    margin: 9px 286px 3px;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    text-align: center;
 }
 
 .main__title-right {
-    text-align: end;
-    margin-right: -30px;
+    text-align: right;
 }
 
 .description {
@@ -117,15 +190,6 @@
     text-transform: uppercase;
     margin-left: 28px;
     word-spacing: 19px;
-}
-
-.button {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 22px;
-    padding: 12px 31px;
 }
 
 /* Конец секции cover */
@@ -159,24 +223,33 @@
 }
 
 .lots__card-list-item:nth-child(1) {
-    background-image: url('../images/card-lot-01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .lots__card-list-item:nth-child(2) {
-    background-image: url('../images/card-lot-02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .lots__card-list-item:nth-child(3) {
-    background-image: url('../images/card-lot-03.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.card_type_film {
+    background-image: url('../images/card-lot-01.jpg');
+}
+
+.card_type_book {
+    background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .card-link {
@@ -206,15 +279,6 @@
     color: #fff;
     margin-top: auto;
     position: relative;
-}
-
-.card__image {
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
 }
 
 .lots__look-more-link {
