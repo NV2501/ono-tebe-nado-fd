@@ -1,1 +1,322 @@
-/* место для вашего кода */
+/* Стили шапки */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 51px;
+}
+
+.header__links-list{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.header__links-list-item{
+    list-style: circle;
+    padding-left: 5px;
+}
+
+.header__links-list-item a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.header__links-list-item_no-bullet{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.header__links-list-item.header__links-list-item_no-bullet::before{
+    content: none;
+}
+
+.site__logo{
+    display: block;
+    width: 136.5px;
+}
+
+.header__address{
+    max-width: 238px;
+    justify-self: end;
+}
+
+.header__address-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__address-list-item{
+    list-style: none;
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+.header__address-list-item-link{
+    text-decoration: none;
+    color: #000;
+
+}
+
+/* Конец стилей шапки */
+
+
+/* Секция cover */
+
+.cover{
+    background-image: url('../images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 165px 50px 51px;
+}
+
+.main__title{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 30px;
+    margin-bottom: 126px;
+    position: relative;
+}
+
+.letter__spacing-words{
+    letter-spacing: 59px;
+}
+
+.main__title-left{
+    margin-right: auto;
+}
+
+.main__title-left:last-child{
+    margin-left: .5rem;
+}
+
+.main__title-center{
+    margin: 9px 286px 3px;
+}
+
+.main__title-right{
+    text-align: end;
+    margin-right: -30px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.description__text{
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 28px;
+    word-spacing: 19px;
+}
+
+.button{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 12px 31px;
+}
+
+/* Конец секции cover */
+
+
+/* Секция Лоты */
+
+.lots{
+    margin: 179px 24px 146px;
+}
+
+.lots__heading{
+    margin-left: 40px;
+}
+
+.lots__card-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 27px 0 30px;
+}
+
+.lots__card-list-item{
+    min-height: 563px;
+    width: 334px;
+    overflow: hidden;
+    position: relative;
+}
+
+.lots__card-list-item:nth-child(1){
+    background-image: url('../images/card-lot-01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lots__card-list-item:nth-child(2){
+    background-image: url('../images/card-lot-02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lots__card-list-item:nth-child(3){
+    background-image: url('../images/card-lot-03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-link{
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    padding: 52px 40px 48px;
+    position: relative;
+    z-index: 2;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
+    line-height: 26px;
+    font-size: 22px;
+}
+
+.card__text{
+    color: #fff;
+    margin-top: auto;
+    position: relative;
+}
+
+.card__image{
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.lots__look-more-link{
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* Конец секции Лоты */
+
+
+/* Секция Об аукционе */
+
+.about{
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
+.left__column-logo-site{
+    margin-top: 35px;
+    margin-left: 71px;
+    width: 240px;
+    height: 240px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__column-logo-site img{
+    max-width: 148px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.right__column-block-about{
+    max-width: 693px;
+    margin-top: 137px;
+}
+
+.right__column-block-text-about{
+    margin-top: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* Конец секции Об аукционе */
+
+
+/* Подвал сайта */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: start;
+    margin-top: 182px;
+    padding: 0 51px 88px;
+}
+
+.footer__address{
+    max-width: 205px;
+}
+
+.footer__menu{
+    text-align: center;
+}
+
+.footer__menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.footer__menu-list-item{
+    list-style: none;
+}
+
+.footer__menu-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer__social-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 48px;
+}
+
+.footer__social-list-item{
+    list-style: none;
+}
+
+.footer__social-link{
+    display: flex;
+}
+
+.footer__social-icon{
+    height: 48px;
+    width: 48px;
+}
+
+/* Конец подвала */
