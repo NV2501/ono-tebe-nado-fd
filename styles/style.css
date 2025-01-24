@@ -220,13 +220,11 @@ address {
     width: 334px;
     overflow: hidden;
     position: relative;
-}
-
-.lots__card-list-item {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
