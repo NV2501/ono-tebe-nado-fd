@@ -222,19 +222,7 @@ address {
     position: relative;
 }
 
-.lots__card-list-item:nth-child(1) {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.lots__card-list-item:nth-child(2) {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.lots__card-list-item:nth-child(3) {
+.lots__card-list-item {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
